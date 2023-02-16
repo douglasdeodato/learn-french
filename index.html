@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>French</title>
+  </head>
+  <script>
+    function playAudio(text, language) {
+  const audio = new Audio();
+  audio.src = `https://translate.google.com/translate_tts?ie=UTF-8&tl=${language}&client=tw-ob&q=${encodeURIComponent(text)}`;
+  audio.play();
+}
+
+  </script>
+  <body>
+    <h1>French Phrases</h1>
+    <button onclick="playAudio('Bonjour!', 'fr')">Bonjour!</button>
+    <button onclick="playAudio('Comment ça va?', 'fr')">Comment ça va?</button>
+  </body>
+</html>
