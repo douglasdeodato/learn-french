@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>French</title>
+    <script>
+      function playAudio(text, language) {
+        const audio = new Audio();
+        audio.src = `https://translate.google.com/translate_tts?ie=UTF-8&tl=${language}&client=tw-ob&q=${encodeURIComponent(
+          text
+        )}`;
+        audio.play();
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Recebendo Hóspedes na Pousada</h1>
+    <button onclick="playAudio('Bonjour!', 'fr')">Bonjour! (Olá!)</button>
+    <button onclick="playAudio('Bonsoir!', 'fr')">Bonsoir! (Boa noite!)</button>
+    <button onclick="playAudio('Comment ça va?', 'fr')">Comment ça va? (Como vai?)</button>
+    <button onclick="playAudio('Bienvenue!', 'fr')">Bienvenue! (Bem-vindo!)</button>
+
+    <h2>Apresentações:</h2>
+    <button onclick="playAudio('Je m\'appelle [seu nome].', 'fr')">Je m'appelle [seu nome]. (Meu nome é [seu nome].)</button>
+    <button onclick="playAudio('Enchanté(e) de faire votre connaissance.', 'fr')">Enchanté(e) de faire votre connaissance. (Prazer em conhecê-lo(a).)</button>
+
+    <h2>Comunicação básica:</h2>
+    <button onclick="playAudio('Parlez-vous anglais?', 'fr')">Parlez-vous anglais? (Você fala inglês?)</button>
+    <button onclick="playAudio('Je parle un peu français.', 'fr')">Je parle un peu français. (Eu falo um pouco de francês.)</button>
+    <button onclick="playAudio('Je ne comprends pas.', 'fr')">Je ne comprends pas. (Eu não entendo.)</button>
+    <button onclick="playAudio('Pouvez-vous répéter, s\'il vous plaît?', 'fr')">Pouvez-vous répéter, s'il vous plaît? (Você pode repetir, por favor?)</button>
+
+    <h2>Perguntas e respostas:</h2>
+    <button onclick="playAudio('Où est la réception?', 'fr')">Où est la réception? (Onde fica a recepção?)</button>
+    <button onclick="playAudio('Quelle heure est le petit-déjeuner?', 'fr')">Quelle heure est le petit-déjeuner? (A que horas é o café da manhã?)</button>
+    <button onclick="playAudio('Comment puis-je me rendre à la plage?', 'fr')">Comment puis-je me rendre à la plage? (Como posso ir para a praia?)</button>
+    <button onclick="playAudio('Où se trouve la salle de bain?', 'fr')">Où se trouve la salle de bain? (Onde fica o banheiro?)</button>
+
+    <h2>Expressões úteis:</h2>
+    <button onclick="playAudio('Merci beaucoup.', 'fr')">Merci beaucoup. (Muito obrigado/a.)</button>
+    <button onclick="playAudio('S\'il vous plaît.', 'fr')">S'il vous plaît. (Por favor.)</button>
+    <button onclick="playAudio('Excusez-moi.', 'fr')">Excusez-moi. (Com licença/Desculpe-me.)</button>
+    <button onclick="playAudio('Je suis désolé(e).', 'fr')">Je suis désolé(e). (Eu sinto muito.)</button>
+  </body>
+</html>
